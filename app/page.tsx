@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-import { modules } from '../src/data/modules';
+import { allModules as modules } from '../src/data/allModules';
 import { getOverallProgress, getModuleCompletion } from '../src/lib/moduleMath';
 import { getProgress } from '../src/lib/progress';
 
@@ -20,7 +20,7 @@ export default function HomePage() {
     <div className="space-y-6">
       <div className="bg-white p-6 rounded-lg shadow-sm">
         <h1 className="text-2xl font-semibold">Welcome to DCSPrep</h1>
-        <p className="text-slate-600 mt-2">Quick onboarding for Library & ICT Assistant support staff.</p>
+        <p className="text-slate-600 mt-2">Quick onboarding plus personal Outdoor Education revision modules.</p>
 
         <div className="mt-4 flex items-center gap-4">
           <Link href="/modules" className="inline-block bg-indigo-600 text-white py-2 px-4 rounded">Browse modules</Link>
