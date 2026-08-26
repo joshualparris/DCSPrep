@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { modules } from '../../src/data/modules';
+import { allModules as modules } from '../../src/data/allModules';
 import ModuleCard from '../../src/components/modules/ModuleCard';
 import { getProgress } from '../../src/lib/progress';
 import { getModuleCompletion } from '../../src/lib/moduleMath';
@@ -26,8 +26,6 @@ export default function ModulesPage() {
         <h2 className="text-xl font-semibold">All Modules</h2>
         <div className="text-sm text-slate-500">{modules.length} modules</div>
       </div>
-
-      
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {modules.map((m) => (
