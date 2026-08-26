@@ -1,5 +1,5 @@
 import React from 'react';
-import { modules } from '../../../src/data/modules';
+import { allModules as modules } from '../../../src/data/allModules';
 import ModuleDetail from '../../../src/components/modules/ModuleDetail';
 
 export default function ModulePage({ params }: { params: { moduleId: string } }) {
