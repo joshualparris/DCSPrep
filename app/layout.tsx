@@ -41,6 +41,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="container text-sm text-slate-500">© {new Date().getFullYear()} Dubbo Christian School — DCSPrep</div>
           </footer>
         </div>
+        <script
+          src="https://cdn.jsdelivr.net/gh/joshualparris/JoshHub@main/public/podcast-dock-universal.js"
+          data-bank="it"
+          data-label="🎧 Listen to a different IT support podcast"
+          data-quiet-on-input="true"
+          defer
+        />
       </body>
     </html>
   );
